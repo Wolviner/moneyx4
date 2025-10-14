@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 12, "column": 0}, "map": {"version":3,"sources":["file:///C:/Projects/MoneyX/moneyx4/src/app/page.js"],"sourcesContent":["import HeroSection from \"@/components/Hero.jsx\"\nexport default function Home() {\nreturn (\n  <div className=\"mt-40\">\n    <HeroSection/>\n  </div>\n);\n\n}\n"],"names":[],"mappings":";;;;;;;;;;;;AACe,SAAS;IACxB,qBACE,8OAAC;QAAI,WAAU;kBACb,cAAA,8OAAC;;;;;;;;;;AAIL","debugId":null}}]
+}

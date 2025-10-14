@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Projects/MoneyX/moneyx4/src/app/%28auth%29/layout.js"],"sourcesContent":["import React from 'react'\r\n\r\nconst AuthLayout = ({children}) => {\r\nreturn <div className='flex justify-center pt-40'>{children}</div>;\r\n}\r\n\r\nexport default AuthLayout"],"names":[],"mappings":";;;;;AAAA;;;AAEA,MAAM,aAAa,CAAC,EAAC,QAAQ,EAAC;IAC9B,qBAAO,8OAAC;QAAI,WAAU;kBAA6B;;;;;;AACnD;uCAEe","debugId":null}}]
+}
