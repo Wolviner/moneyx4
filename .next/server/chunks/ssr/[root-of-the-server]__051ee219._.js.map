@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 16, "column": 0}, "map": {"version":3,"sources":["file:///C:/Projects/MoneyX/moneyx4/src/app/%28main%29/dashboard/page.jsx"],"sourcesContent":["import React from \"react\";\r\n\r\nconst Dashboard = () => {\r\n  return <div>Dashboard Page</div>;\r\n};\r\n\r\nexport default Dashboard;\r\n"],"names":[],"mappings":";;;;;AAAA;;;AAEA,MAAM,YAAY;IAChB,qBAAO,8OAAC;kBAAI;;;;;;AACd;uCAEe","debugId":null}}]
+}

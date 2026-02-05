@@ -1,9 +1,6 @@
 {
   "app": {
-    "[project]/src/app/(auth)/SignIn/[[...SignIn]]/page": [
-      "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
-    ],
-    "[project]/src/app/page": [
+    "[project]/src/app/(main)/dashboard/page": [
       "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
     ]
   },
