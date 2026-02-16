@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 55, "column": 0}, "map": {"version":3,"sources":["file:///C:/Projects/MoneyX/moneyx4/src/lib/inngest/client.js"],"sourcesContent":["import { Inngest } from \"inngest\";\r\n\r\n// Create a client to send and receive events\r\nexport const inngest = new Inngest({\r\n  id: \"moneyx4\",\r\n  name: \"MoneyX4\",\r\n  retryFunction: async (attempt) => ({\r\n    delay: Math.pow(2, attempt) * 1000, // Exponential backoff: 1s, 2s, 4s, etc.\r\n    maxAttempts: 3, // Maximum of 5 retry attempts\r\n  }),\r\n});\r\n"],"names":[],"mappings":";;;;AAAA;;AAGO,MAAM,UAAU,IAAI,6JAAO,CAAC;IACjC,IAAI;IACJ,MAAM;IACN,eAAe,OAAO,UAAY,CAAC;YACjC,OAAO,KAAK,GAAG,CAAC,GAAG,WAAW;YAC9B,aAAa;QACf,CAAC;AACH","debugId":null}},
+    {"offset": {"line": 73, "column": 0}, "map": {"version":3,"sources":["file:///C:/Projects/MoneyX/moneyx4/src/app/api/inngest/route.js"],"sourcesContent":["import { helloWorld } from \"./../../lib/inngest/functions\";\r\nimport { inngest } from \"../../../lib/inngest/client\";\r\nimport { serve } from \"inngest/next\";\r\n\r\n// Create an API that serves zero functions\r\nexport const { GET, POST, PUT } = serve({\r\n  client: inngest,\r\n  functions: [helloWorld],\r\n});\r\n"],"names":[],"mappings":";;;;;;;;;;;;;AACA;AACA;;;;AAGO,MAAM,EAAE,GAAG,EAAE,IAAI,EAAE,GAAG,EAAE,GAAG,IAAA,0IAAK,EAAC;IACtC,QAAQ,uJAAO;IACf,WAAW;QAAC;KAAW;AACzB","debugId":null}}]
+}

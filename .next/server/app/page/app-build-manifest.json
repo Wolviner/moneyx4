@@ -1,25 +1,25 @@
 {
   "pages": {
     "/page": [
-      "static/chunks/node_modules_next_dist_8db7fb1f._.js",
-      "static/chunks/src_app_favicon_ico_mjs_243aa161._.js",
-      "static/chunks/[root-of-the-server]__2dc75fed._.css",
-      "static/chunks/node_modules_@clerk_nextjs_dist_esm_app-router_8a533d2a._.js",
-      "static/chunks/node_modules_a4049612._.js",
-      "static/chunks/src_app_layout_0a548d63.js",
-      "static/chunks/node_modules_next_dist_client_components_builtin_global-error_680071a0.js",
-      "static/chunks/node_modules_e8682d0b._.js",
-      "static/chunks/src_7b1feb55._.js",
-      "static/chunks/src_app_page_680071a0.js",
-      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_57d40746._.js",
-      "static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js",
-      "static/chunks/node_modules_next_dist_compiled_next-devtools_index_a9cb0712.js",
-      "static/chunks/node_modules_next_dist_compiled_5150ccfd._.js",
-      "static/chunks/node_modules_next_dist_client_cf1d9188._.js",
-      "static/chunks/node_modules_next_dist_b0daae9a._.js",
-      "static/chunks/node_modules_@swc_helpers_cjs_b3dc30d6._.js",
-      "static/chunks/_a0ff3932._.js",
-      "static/chunks/turbopack-_cdba956c._.js"
+      "static/chunks/d8880_next_dist_d1e55daf._.js",
+      "static/chunks/moneyx4_src_app_favicon_ico_mjs_c9ecc752._.js",
+      "static/chunks/[root-of-the-server]__8b86ae3f._.css",
+      "static/chunks/d8880_@clerk_nextjs_dist_esm_app-router_504a622a._.js",
+      "static/chunks/d8880_dcaf14fb._.js",
+      "static/chunks/moneyx4_src_app_layout_444e6ea3.js",
+      "static/chunks/d8880_next_dist_client_components_builtin_global-error_cbacae2f.js",
+      "static/chunks/d8880_6428739c._.js",
+      "static/chunks/moneyx4_src_8db9f5f6._.js",
+      "static/chunks/moneyx4_src_app_page_cbacae2f.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_390c6294._.js",
+      "static/chunks/d8880_next_dist_compiled_react-dom_e9ce511e._.js",
+      "static/chunks/d8880_next_dist_compiled_next-devtools_index_6e9f9959.js",
+      "static/chunks/d8880_next_dist_compiled_ab76277a._.js",
+      "static/chunks/d8880_next_dist_client_a3196a55._.js",
+      "static/chunks/d8880_next_dist_f5546313._.js",
+      "static/chunks/d8880_@swc_helpers_cjs_b6dfd834._.js",
+      "static/chunks/moneyx4_a0ff3932._.js",
+      "static/chunks/turbopack-moneyx4_f36d35e6._.js"
     ]
   }
 }

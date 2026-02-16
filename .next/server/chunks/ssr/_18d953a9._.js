@@ -2431,14 +2431,9 @@ function AccountChart({ transactions }) {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$Tooltip$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Tooltip"], {
                                         formatter: (value)=>[
-                                                `$${value}`,
+                                                `$${value.toFixed(2)}`,
                                                 undefined
-                                            ],
-                                        contentStyle: {
-                                            backgroundColor: "hsl(var(--popover))",
-                                            border: "1px solid hsl(var(--border))",
-                                            borderRadius: "var(--radius)"
-                                        }
+                                            ]
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/(main)/account/[id]/_components/account-chart.jsx",
                                         lineNumber: 148,
@@ -2446,7 +2441,7 @@ function AccountChart({ transactions }) {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$Legend$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Legend"], {}, void 0, false, {
                                         fileName: "[project]/src/app/(main)/account/[id]/_components/account-chart.jsx",
-                                        lineNumber: 156,
+                                        lineNumber: 151,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$Bar$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Bar"], {
@@ -2461,7 +2456,7 @@ function AccountChart({ transactions }) {
                                         ]
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/(main)/account/[id]/_components/account-chart.jsx",
-                                        lineNumber: 157,
+                                        lineNumber: 152,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$Bar$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Bar"], {
@@ -2476,7 +2471,7 @@ function AccountChart({ transactions }) {
                                         ]
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/(main)/account/[id]/_components/account-chart.jsx",
-                                        lineNumber: 163,
+                                        lineNumber: 158,
                                         columnNumber: 15
                                     }, this)
                                 ]

@@ -310,6 +310,12 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$plus$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Plus$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/plus.js [app-rsc] (ecmascript) <export default as Plus>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$dashboard$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/actions/dashboard.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$main$292f$dashboard$2f$_components$2f$account$2d$card$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/(main)/dashboard/_components/account-card.jsx [app-rsc] (ecmascript)");
+(()=>{
+    const e = new Error("Cannot find module '@/actions/budget'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})();
+;
 ;
 ;
 ;
@@ -319,10 +325,24 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$main$292f$da
 ;
 async function DashboardPage() {
     const accounts = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$dashboard$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getUserAccounts"])();
+    const defaultAccount = accounts?.find((account)=>account.isDefault);
+    let budgetData = null;
+    if (defaultAccount) {
+        budgetData = await getCurrentBudget(defaultAccount.id);
+    }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "px-5",
         children: [
-            "// Budget Section // Overiew Section // Accounts Grid",
+            "// Budget Section",
+            budgetData && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(BudgetProgress, {
+                initialBudget: budgetData.initialBudget,
+                currentExpenses: budgetData.currentExpenses || 0
+            }, void 0, false, {
+                fileName: "[project]/src/app/(main)/dashboard/page.jsx",
+                lineNumber: 22,
+                columnNumber: 9
+            }, this),
+            "// Overiew Section // Accounts Grid",
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "grid gap-4 md:grid-cols-2 lg:grid-cols-3",
                 children: [
@@ -336,7 +356,7 @@ async function DashboardPage() {
                                         className: "h-10 w-10 mb-2"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/(main)/dashboard/page.jsx",
-                                        lineNumber: 18,
+                                        lineNumber: 32,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -344,23 +364,23 @@ async function DashboardPage() {
                                         children: "Add New Account"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/(main)/dashboard/page.jsx",
-                                        lineNumber: 19,
+                                        lineNumber: 33,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/(main)/dashboard/page.jsx",
-                                lineNumber: 17,
+                                lineNumber: 31,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/(main)/dashboard/page.jsx",
-                            lineNumber: 16,
+                            lineNumber: 30,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/(main)/dashboard/page.jsx",
-                        lineNumber: 15,
+                        lineNumber: 29,
                         columnNumber: 9
                     }, this),
                     accounts.length > 0 && accounts?.map((account)=>{
@@ -368,20 +388,20 @@ async function DashboardPage() {
                             account: account
                         }, account.id, false, {
                             fileName: "[project]/src/app/(main)/dashboard/page.jsx",
-                            lineNumber: 25,
+                            lineNumber: 39,
                             columnNumber: 20
                         }, this);
                     })
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/(main)/dashboard/page.jsx",
-                lineNumber: 14,
+                lineNumber: 28,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/(main)/dashboard/page.jsx",
-        lineNumber: 12,
+        lineNumber: 19,
         columnNumber: 5
     }, this);
 }

@@ -1,9 +1,6 @@
 {
-  "/(auth)/SignIn/[[...SignIn]]/page": "app/(auth)/SignIn/[[...SignIn]]/page.js",
-  "/(main)/account/[id]/page": "app/(main)/account/[id]/page.js",
   "/(main)/dashboard/page": "app/(main)/dashboard/page.js",
   "/_not-found/page": "app/_not-found/page.js",
-  "/api/seed/route": "app/api/seed/route.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/page": "app/page.js"
+  "/api/inngest/route": "app/api/inngest/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }
