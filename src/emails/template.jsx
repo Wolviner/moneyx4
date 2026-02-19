@@ -68,7 +68,9 @@ export default function EmailTemplate({
             <Section style={styles.statsContainer}>
               <div style={styles.stat}>
                 <Text style={styles.text}>Total Income</Text>
-                <Text style={styles.heading}>${data?.stats.totalIncome}</Text>
+                <Text style={styles.heading}>
+                  ${data?.stats.totalIncome.toFixed(2)}
+                </Text>
               </div>
               <div style={styles.stat}>
                 <Text style={styles.text}>Total Expenses</Text>
@@ -77,7 +79,10 @@ export default function EmailTemplate({
               <div style={styles.stat}>
                 <Text style={styles.text}>Net</Text>
                 <Text style={styles.heading}>
-                  ${data?.stats.totalIncome - data?.stats.totalExpenses}
+                  $
+                  {(
+                    data?.stats.totalIncome - data?.stats.totalExpenses
+                  ).toFixed(2)}
                 </Text>
               </div>
             </Section>
@@ -90,7 +95,7 @@ export default function EmailTemplate({
                   ([category, amount]) => (
                     <div key={category} style={styles.row}>
                       <Text style={styles.text}>{category}</Text>
-                      <Text style={styles.text}>${amount}</Text>
+                      <Text style={styles.text}>${amount.toFixed(2)}</Text>
                     </div>
                   ),
                 )}
@@ -100,7 +105,7 @@ export default function EmailTemplate({
             {/* AI Insights */}
             {data?.insights && (
               <Section style={styles.section}>
-                <Heading style={styles.heading}>Welth Insights</Heading>
+                <Heading style={styles.heading}>MoneyX Insights</Heading>
                 {data.insights.map((insight, index) => (
                   <Text key={index} style={styles.text}>
                     • {insight}
@@ -110,7 +115,7 @@ export default function EmailTemplate({
             )}
 
             <Text style={styles.footer}>
-              Thank you for using Welth. Keep tracking your finances for better
+              Thank you for using MoneyX. Keep tracking your finances for better
               financial health!
             </Text>
           </Container>

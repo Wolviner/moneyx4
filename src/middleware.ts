@@ -1,17 +1,36 @@
 import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
+import arcjet, { createMiddleware, detectBot, shield } from "@arcjet/next";
 
 const isProtectedRoute = createRouteMatcher([
   "/dashboard(.*)",
   "/account(.*)",
   "/transaction(.*)",
 ]);
-export default clerkMiddleware(async (auth, req) => {
+
+const aj = arcjet({
+  key: process.env.ARCJET_KEY,
+  rules: [
+    // Create a shield rule to block suspicious traffic
+    shield({
+      mode: "LIVE",
+    }),
+    // Create a bot detection rule
+    detectBot({
+      mode: "LIVE",
+      // Block all bots except the following
+      allow: ["CATEGORY:SEARCH_ENGINE", "GO_HTTP"],
+    }),
+  ],
+});
+const clerk = clerkMiddleware(async (auth, req) => {
   const { userId } = await auth();
   if (!userId && isProtectedRoute(req)) {
     const { redirectToSignIn } = await auth();
     return redirectToSignIn();
   }
 });
+
+export default createMiddleware(aj, clerk);
 
 export const config = {
   matcher: [

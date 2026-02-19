@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
-    {"offset": {"line": 55, "column": 0}, "map": {"version":3,"sources":["file:///C:/Projects/MoneyX/moneyx4/src/app/api/inngest/route.js"],"sourcesContent":["import { inngest } from \"@/lib/inngest/client\";\r\nimport { serve } from \"inngest/next\";\r\n\r\n// Create an API that serves zero functions\r\nexport const { GET, POST, PUT } = serve({\r\n  client: inngest,\r\n  functions: [\r\n    /* your functions will be passed here later! */\r\n  ],\r\n});\r\n"],"names":[],"mappings":";;;;;;;;;;;;;AACA;;;AAGO,MAAM,EAAE,GAAG,EAAE,IAAI,EAAE,GAAG,EAAE,GAAG,IAAA,0IAAK,EAAC;IACtC,QAAQ;IACR,WAAW,EAEV;AACH","debugId":null}}]
-}

@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Projects/MoneyX/moneyx4/src/app/%28main%29/layout.js"],"sourcesContent":["import React from \"react\";\r\n\r\nconst MainLayout = ({ children }) => {\r\n  return <div className=\"conatiner mx-auto my-32\">{children}</div>;\r\n};\r\n\r\nexport default MainLayout;\r\n"],"names":[],"mappings":";;;;;AAAA;;;AAEA,MAAM,aAAa,CAAC,EAAE,QAAQ,EAAE;IAC9B,qBAAO,yPAAC;QAAI,WAAU;kBAA2B;;;;;;AACnD;uCAEe","debugId":null}}]
-}
