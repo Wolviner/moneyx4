@@ -15,15 +15,15 @@ const Header = async () => {
   await checkUser();
 
   return (
-    <div className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b">
-      <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
+    <div className="fixed top-0  h-28 w-full bg-white/80 backdrop-blur-md z-50 border-b">
+      <nav className="container mx-auto px-4 py-1 flex items-center justify-between">
         <Link href="/">
           <Image
-            src="/MoneyX.jpg"
-            alt="MoneyX4"
+            src="/PathWiseLogo.png"
+            alt="PathWise"
             width={200}
             height={60}
-            className="h-12 w-auto object-contain"
+            className="h-28 w-auto object-contain"
           />
         </Link>
 
@@ -62,7 +62,12 @@ const Header = async () => {
           <SignedIn>
             <UserButton
               appearance={{
-                elements: { avatarBox: "w-24 h-24" },
+                elements: {
+                  avatarBox: {
+                    width: "35px",
+                    height: "35px",
+                  },
+                },
               }}
             />
           </SignedIn>

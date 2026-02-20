@@ -7,7 +7,7 @@ import { Toaster } from "sonner";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "MoneyX4",
+  title: "PathWise",
   description: "For all your money needs",
 };
 
@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
           <Toaster richColors />
           <footer className="bg-blue-50 py-12">
             <div className=" container mx-auto px-4 text-center text-gray-600">
-              <p>MoneyX4, For all your money needs</p>
+              <p>PathWise, For all your money needs</p>
             </div>
           </footer>
         </body>
